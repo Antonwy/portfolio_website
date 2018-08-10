@@ -1,0 +1,270 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+@font-face {
+  font-family: Futura;
+  src: url(../Fonts/Futura\ Book\ font.ttf);
+}
+
+.landingBG{
+  background-image: url(../Images/michael-louie-770056-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 40%;
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+}
+
+.Logo img{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+.Logo img:first-child{
+  padding-top: 200px;
+}
+
+.black-gradient{
+    width: 100%;
+    height: 60%;
+    z-index: 0;
+    background-image: linear-gradient(to bottom, rgba(6, 9, 14, 0), rgba(6, 9, 14, 0.84) 58%, #06090e);
+    position: absolute;
+}
+
+.aboutText{
+  position: relative;
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-family: futura;
+  margin: auto;
+
+}
+
+.aboutMe{
+  color: rgba(255, 255, 255, .8);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+}
+
+.aboutMeHeader{
+  font-size: 4em;
+}
+
+.aboutMeBG{
+  background-image: url(../Images/zach-meaney-248676-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 150vh;
+  position: relative;
+}
+
+.profileImage{
+  width: 30vw;
+  height: 30vw;
+  max-width: 250px;
+  max-height: 250px;
+  background-image: url(../Images/profileImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 50px auto;
+  border-radius: 15vw;
+  transform: rotate(90deg)
+}
+
+.skillsBG{
+  background-image: url(../Images/ilya-pavlov-87438-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+  
+}
+
+.skillsContainer{
+  height: 120vh;
+  overflow-y: scroll;
+}
+
+.skillTitle{
+  font-size: 4em;
+}
+
+.skillList{
+  position: relative;
+  width: 75%;
+  height: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillName{
+  margin-top: 20px;
+  margin-left: 40px;
+  font-family: futura;
+  opacity: .9;
+}
+
+.bar{
+  width: 500px;
+  margin: 0 40px;
+  height: 25px;
+  background-color: rgba(199, 199, 199, 0.4);
+  position: relative;
+  border-radius: 12.5px;
+}
+
+.barProgress{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 12.5px;
+  transition-duration: 500ms;
+}
+
+.contactBG{
+  background-image: url(../Images/brett-harrison-770715-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 85vh;
+  position: relative;
+  z-index: -1;
+}
+
+.contactList{
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.contact{
+  text-align: center;
+}
+
+.contact p{
+  opacity: .8;
+  text-decoration: underline;
+  margin: 20px;
+  font-family: futura;
+  cursor: pointer;
+}
+
+.contact img{
+  transition-duration: 250ms;
+}
+
+.contact img:hover{
+  opacity: .5;
+}
+
+.footerBG{
+  background-image: url(../Images/nasa-53884-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  z-index: -2;
+}
+
+.footerText{
+  width: 100%;
+  opacity: .7;
+  position: absolute;
+  color: white;
+  bottom: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px){
+  .aboutText{
+    width: 75%;
+  }
+  .aboutMe{
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .aboutMe{
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .bar{
+    width: 300px;
+  }
+
+  .landingBG h1{
+    font-size: 5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .skillTitle{
+    font-size: 4em;
+  }
+  .aboutText{
+    width: 90%;
+  }
+  .landingBG h1{
+    font-size: 4em;
+  }
+  .Logo img{
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .skillTitle{
+    font-size: 3.5em;
+  }
+  .aboutMe{
+    font-size: .8em;
+  }
+  .aboutMeHeader{
+    font-size: 3em;
+  }
+  .landingBG h1{
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .bar{
+    width: 250px;
+  }
+  .skillTitle{
+    font-size: 3em;
+  }
+  .aboutMe{
+    font-size: .8em;
+  }
+  .aboutMeHeader{
+    font-size: 3em;
+  }
+  .landingBG h1{
+    font-size: 4em;
+  }
+}
